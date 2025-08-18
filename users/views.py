@@ -36,22 +36,26 @@ def _authed_session():
     )
     return AuthorizedSession(creds)
 
-def credentials(request):
-    try:
-        
-        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        
-        GOOGLE_CLOUD_CREDENTIALS_FILE = os.path.join(BASE_DIR, "service-account.json")
-        
-        GOOGLE_CLOUD_CREDENTIALS = service_account.Credentials.from_service_account_file(
-            GOOGLE_CLOUD_CREDENTIALS_FILE,
-            scopes=["https://www.googleapis.com/auth/cloud-platform"]
-        )
-        
-        creds = GOOGLE_CLOUD_CREDENTIALS
+def authenticate():
 
-        creds.refresh(Request())
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         
+    GOOGLE_CLOUD_CREDENTIALS_FILE = os.path.join(BASE_DIR, "service-account.json")
+        
+    GOOGLE_CLOUD_CREDENTIALS = service_account.Credentials.from_service_account_file(
+        GOOGLE_CLOUD_CREDENTIALS_FILE,
+        scopes=["https://www.googleapis.com/auth/cloud-platform"]
+    )  
+        
+    creds = GOOGLE_CLOUD_CREDENTIALS
+
+    return creds
+
+def credentials(request):
+    try:       
+        creds = authenticate()
+        creds.refresh(Request())
+                
         return JsonResponse({
             "project_id": creds.project_id,
             "credentials_type": type(creds).__name__,
@@ -65,7 +69,7 @@ def credentials(request):
 def ask_llm_data(request):
     try:
 
-        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        """BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         
         GOOGLE_CLOUD_CREDENTIALS_FILE = os.path.join(BASE_DIR, "service-account.json")
         
@@ -74,7 +78,9 @@ def ask_llm_data(request):
             scopes=["https://www.googleapis.com/auth/cloud-platform"]
         )
         
-        creds = GOOGLE_CLOUD_CREDENTIALS
+        creds = GOOGLE_CLOUD_CREDENTIALS"""
+
+        creds = authenticate()
 
         aiplatform.init(
             project=creds.project_id,
@@ -90,16 +96,8 @@ def ask_llm_data(request):
         return JsonResponse({"error": str(e)})
     
 def genclient(request):
-    print("Abccdd")
     try:
-        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        GOOGLE_CLOUD_CREDENTIALS_FILE = os.path.join(BASE_DIR, "service-account.json")
-
-        # Load service account credentials
-        creds = service_account.Credentials.from_service_account_file(
-            GOOGLE_CLOUD_CREDENTIALS_FILE,
-            scopes=["https://www.googleapis.com/auth/cloud-platform"]
-        )
+        creds = authenticate()
 
         # Initialize Vertex AI with credentials + region
         vertexai.init(
