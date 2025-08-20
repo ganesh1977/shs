@@ -63,7 +63,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "users",
-    "rest_framework"
+    "rest_framework",
+    "rest_framework_swagger",
+    "drf_yasg"
 ]
 
 MIDDLEWARE = [
@@ -120,6 +122,7 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
+        "rest_framework.permissions.AllowAny",
     ]
 }
 
