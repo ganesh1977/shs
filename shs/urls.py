@@ -18,12 +18,38 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.http import HttpResponse
+from drf_yasg import openapi
+from drf_yasg.views import get_schema_view
+from rest_framework import permissions
+from rest_framework_swagger.views import get_swagger_view
+from django.views.generic import TemplateView
 
 def home(request):
     return HttpResponse("Hello, Django is working!")
 
+#schema_view = get_swagger_view(title='Pastebin API')
+schema_view = get_schema_view(
+    openapi.Info(
+        title="My API",
+        default_version='v1',
+        description="API documentation for my project",
+        terms_of_service="https://www.example.com/terms/",
+        contact=openapi.Contact(email="admin@example.com"),
+        license=openapi.License(name="MIT License"),
+    ),
+    public=True,
+    permission_classes=(permissions.AllowAny,),  
+)
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", home),
-    path("users/", include("users.urls"))
+    path("users/", include("users.urls")),
+    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger'),
+    path('redoc/', TemplateView.as_view(
+        template_name='redoc.html',
+        extra_context={'schema_url':'openapi-schema'}
+    ), name='redoc'),
+
+
 ]
