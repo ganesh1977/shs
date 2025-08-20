@@ -65,7 +65,8 @@ INSTALLED_APPS = [
     "users",
     "rest_framework",
     "rest_framework_swagger",
-    "drf_yasg"
+    "drf_yasg",
+    "voicebot"
 ]
 
 MIDDLEWARE = [
