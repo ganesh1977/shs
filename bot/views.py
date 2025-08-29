@@ -3,6 +3,7 @@ import json, os, requests
 from django.http import JsonResponse, HttpResponseForbidden
 from django.views.decorators.csrf import csrf_exempt
 import ollama  # Alla
+import speech_recognition as sr
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_API = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}"
@@ -40,5 +41,63 @@ def chat_with_model(request):
     content = response['message'].content  
 
     return JsonResponse({"response": content})
+
+def listen_and_ask(request):
+    recognizer = sr.Recognizer()
+    mic = sr.Microphone()
+
+    try:
+        with mic as source:
+            print("🎤 Speak now...")
+            recognizer.adjust_for_ambient_noise(source)
+            audio = recognizer.listen(source)
+
+        # Speech to text
+        query = recognizer.recognize_google(audio)
+
+        # Send to Ollama
+        response = ollama.chat(
+            model="llama3.2",
+            messages=[{"role": "user", "content": query}]
+        )
+        answer = response['message'].content
+
+        return JsonResponse({"query": query, "response": answer})
+
+    except sr.UnknownValueError:
+        return JsonResponse({"error": "Could not understand audio"}, status=400)
+
+    except sr.RequestError as e:
+        return JsonResponse({"error": f"Speech recognition request failed: {e}"}, status=500)
+
+    except Exception as e:
+        # Catch *any* other error so Django never returns None
+        return JsonResponse({"error": str(e)}, status=500)
+    
+def hospital_chat(request):
+    query = request.GET.get("q", "")
+
+    if not query:
+        return JsonResponse({"error": "No query provided"}, status=400)
+
+    # Example system prompt to guide the model
+    system_prompt = """
+    You are an AI assistant for a hospital call center.
+    - Greet politely
+    - Help with appointments, doctor info, visiting hours
+    - Do NOT give medical diagnosis
+    - Always suggest speaking with a doctor for medical concerns
+    """
+
+    response = ollama.chat(
+        model="llama3.2",
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": query}
+        ]
+    )
+
+    answer = response['message'].content
+    return JsonResponse({"response": answer})
 
 
