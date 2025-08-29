@@ -66,8 +66,19 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework_swagger",
     "drf_yasg",
-    "voicebot"
+    "voicebot",
+    "channels"
 ]
+SWAGGER_SETTINGS = {
+    "DEFAULT_INFO": "shs.swagger.schema_info",
+}
+
+SETTINGS_PATH = os.path.normpath(os.path.dirname(__file__))
+TEMPLATE_DIRS = (
+    os.path.join(SETTINGS_PATH, 'templates'),
+)
+
+ASGI_APPLICATION = "shs.asgi.application"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -84,7 +95,7 @@ ROOT_URLCONF = "shs.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [

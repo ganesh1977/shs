@@ -46,6 +46,7 @@ urlpatterns = [
     path("", home),
     path("users/", include("users.urls")),
     path("voice/", include("voicebot.urls")),    
+    path("bot/", include("bot.urls")),    
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger'),
     path('redoc/', TemplateView.as_view(
         template_name='redoc.html',

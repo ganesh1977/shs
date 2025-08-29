@@ -1,0 +1,1000 @@
+ 1005  docker images
+ 1006  docker image prune
+ 1007  docker images
+ 1008  docker images -a
+ 1009  docker rmi $(docker images -a -q)
+ 1010  docker images -a
+ 1011  docker ps -a
+ 1012  docker rmi $(docker ps -a -f status=exited -q)
+ 1013  docker rm $(docker ps -a -q)
+ 1014  docker volume ls
+ 1015  docker volume prune
+ 1016  docker ps -a
+ 1017  docker images
+ 1018  docker rmi $(docker images -a -q)
+ 1019  docker ps -a
+ 1020  docker images
+ 1021  docker volume
+ 1022  docker volumes
+ 1023  docker volume
+ 1024  EKS in AWS stands for Amazon Elastic Kubernetes Service.
+ 1025  aws eks --region us-west-2 update-kubeconfig --name my-cluster
+ 1026  curl -k https://splunk-host:8088/services/collector   -H "Authorization: Splunk <your-token>"   -d '{"event": "user login success", "sourcetype": "custom_logs"}'
+ 1027  splunk
+ 1028  wget -O splunk-10.0.0-e8eb0c4654f8-linux-amd64.deb "https://download.splunk.com/products/splunk/releases/10.0.0/linux/splunk-10.0.0-e8eb0c4654f8-linux-amd64.deb"
+ 1029  ls -al
+ 1030  rm -r splunk-10.0.0-e8eb0c4654f8-linux-amd64.deb 
+ 1031  ls -al
+ 1032  which splunk
+ 1033  find splunk
+ 1034  locate splunk
+ 1035  sudo apt auto-clean
+ 1036  sudo apt auto-remove
+ 1037  sudo apt auto-clean
+ 1038  cd ..
+ 1039  # apt-get update && apt-get upgrade -y
+ 1040  apt-get update && apt-get upgrade -y
+ 1041  sudo apt-get update && sudo apt-get upgrade -y
+ 1042  python3 pyprac.py 
+ 1043  clear
+ 1044  python3 pyprac.py 
+ 1045  clear
+ 1046  python3 pyprac.py 
+ 1047  clear
+ 1048  python3 pyprac.py 
+ 1049  python3 smssending.py 
+ 1050  cd python_prac/
+ 1051  code .
+ 1052  pip3 install smtplib
+ 1053  python3 -m pip install --upgrade pip
+ 1054  pip3 install smtplib
+ 1055  grep -r "ttyUSB0"
+ 1056  crontab -l
+ 1057  crontab
+ 1058  sudo apt-get install cron curl
+ 1059  cron
+ 1060  crontab
+ 1061  crontab -h
+ 1062  cd ../hospital-system/
+ 1063  composer global require beyondcode/expose
+ 1064  composer global config bin-dir --absolute
+ 1065  php artisan serve
+ 1066  php artisan serve http://random.expose.dev
+ 1067  php artisan  http://random.expose.dev
+ 1068  php artisan  random.expose.dev
+ 1069  php artisan serve --port  http://random.expose.dev
+ 1070  expose
+ 1071  code .
+ 1072  ls -al
+ 1073  sudo chmod -R 777 start-laravel-expose.sh 
+ 1074  ls -al
+ 1075  ./sh start-laravel-expose.sh 
+ 1076  ./start-laravel-expose.sh 
+ 1077  chmod +x start-laravel-expose.sh
+ 1078  ls -al
+ 1079  ./start-laravel-expose.sh 
+ 1080  ~/.config/composer/vendor/bin/expose --subdomain=saisree 8000
+ 1081  ls -al
+ 1082  expose --version
+ 1083  composer global config bin-dir --absolute
+ 1084  ls ~/.config/composer/vendor/bin/expose
+ 1085  echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> ~/.bashrc
+ 1086  source ~/.bashrc
+ 1087  expose --version
+ 1088  ./start-laravel-expose.sh 
+ 1089  ~/.config/composer/vendor/bin/expose --subdomain=saisree 8000
+ 1090  expose login
+ 1091  cd ../tutorial/
+ 1092  code .
+ 1093  python3 manage.py runserv er
+ 1094  python3 manage.py runserver
+ 1095  python3 manage.py runserver --port 8002
+ 1096  python3 manage.py runserver port 8002
+ 1097  python3 manage.py runserver http://domain.com
+ 1098  python3 manage.py runserver 8002
+ 1099  python3 manage.py runserver 0.0.0.0:8000
+ 1100  python3 manage.py runserver 0.0.0.0:8005
+ 1101  python3 manage.py runserver your_domain
+ 1102  python3 manage.py runserver 8080
+ 1103  php primenumber.php 
+ 1104  clear
+ 1105  php primenumber.php 
+ 1106  pip3 install gunicorn
+ 1107  gunicorn
+ 1108  gunicorn 127.0.0.1
+ 1109  cd tutorial/
+ 1110  gunicorn tutorials.wsgi:application
+ 1111  gunicorn tutorial.wsgi:application
+ 1112  sudo systemctl status gunicorn
+ 1113  gunicorn tutorial.wsgi:application
+ 1114  python3 manage.py runserver
+ 1115  gunicorn tutorial.wsgi:application
+ 1116  php test.php 
+ 1117  php test_jit.php 
+ 1118  php test.php 
+ 1119  git clone https://github.com/speedpy/speedpy.git myproject
+ 1120  cd myproject
+ 1121  bash init.sh
+ 1122  python manage.py generate_tailwind_directories
+ 1123  python3 manage.py generate_tailwind_directories
+ 1124  ls -al
+ 1125  python3 manage.py generate_tailwind_directories
+ 1126  pip3 install celery
+ 1127  python3 manage.py generate_tailwind_directories
+ 1128  pip3 install environ
+ 1129  python3 manage.py generate_tailwind_directories
+ 1130  docker images
+ 1131  python3 manage.py runserver
+ 1132  ls -al
+ 1133  npm run build:css
+ 1134  npm run build
+ 1135  npm run 
+ 1136  npm run tailwind:build
+ 1137  npm run tailwind:watch
+ 1138  ls -al
+ 1139  cd project/
+ 1140  cd ..
+ 1141  ls -al
+ 1142  python3 manage.py runserver
+ 1143  gedit manage.py 
+ 1144  python3 manage.py runserver
+ 1145  sudo gedit /etc/php/8.1/cli/php.ini
+ 1146  sudo apt restart apache2
+ 1147  sudo apt-get apache2 restart
+ 1148  sudo service apache2 restart
+ 1149  sudo systemctl restart php8.1-fpm
+ 1150  sudo systemctl restart apache2
+ 1151  php -i | grep jit
+ 1152  sudo gedit /etc/php/8.1/cli/php.ini
+ 1153  php -i | grep jit
+ 1154  sudo gedit /etc/php/8.1/cli/php.ini
+ 1155  php --version
+ 1156  sudo gedit /etc/php/8.1/cli/php.ini
+ 1157  sudo systemctl restart php8.1-fpm
+ 1158  php -i | grep jit
+ 1159  sudo gedit /etc/php/8.1/cli/php.ini
+ 1160  sudo systemctl restart php8.1-fpm
+ 1161  sudo systemctl restart apache2
+ 1162  php -i | grep jit
+ 1163  php -m | grep opcache
+ 1164  php --ini
+ 1165  sudo gedit /etc/php/8.1/cli/php.ini
+ 1166  sudo apt install php8.1-opcache
+ 1167  php --ini
+ 1168  php -i | grep jit
+ 1169  pip3 install pyaudio
+ 1170  pip3 install playsound
+ 1171  python3 audiofile.py 
+ 1172  pip install google-cloud-speech google-cloud-texttospeech
+ 1173  clear
+ 1174  python3 audiofile.py 
+ 1175  python3 -m json.tool service-account.json
+ 1176  python3 audiofile.py 
+ 1177  python3 -m json.tool service-account.json
+ 1178  python3 audiofile.py 
+ 1179  python3 -m json.tool service-account.json
+ 1180  python3 audiofile.py 
+ 1181  export GOOGLE_APPLICATION_CREDENTIALS="service-account.json"
+ 1182  python3 audiofile.py 
+ 1183  python3 input_out.py 
+ 1184  pip3 install playsound
+ 1185  python3 input_out.py 
+ 1186  python3 practest.py 
+ 1187  php final_key_word_test.php 
+ 1188  clear
+ 1189  php final_key_word_test.php 
+ 1190  pip install google-auth google-auth-oauthlib google-auth-httplib2 fastapi uvicorn
+ 1191  uvicorn main:app --reload
+ 1192  ls -al
+ 1193  cd app
+ 1194  ls -al
+ 1195  uvicorn main:app --reload
+ 1196  pip install google-api-python-client google-auth google-auth-httplib2 google-auth-oauthlib
+ 1197  uvicorn main:app --reload
+ 1198  pip3 install google-cloud-storage
+ 1199  uvicorn main:app --reload
+ 1200  cd ..
+ 1201  uvicorn app.main:app --reload
+ 1202  php singletons.php 
+ 1203  uvicorn app.main:app --reload
+ 1204  php pracinfo.php 
+ 1205  lear
+ 1206  clear
+ 1207  php pracinfo.php 
+ 1208  uvicorn app.main:app --reload
+ 1209  cd hospital-system/
+ 1210  php artisan make:exception CustomException
+ 1211  code .
+ 1212  cd app/
+ 1213  cd Exceptions/
+ 1214  ls -al
+ 1215  cd ..
+ 1216  php artisan serve
+ 1217  uvicorn app.main:app --reload
+ 1218  pip install fastapi uvicorn python-multipart google-cloud-speech google-cloud-texttospeech
+ 1219  uvicorn app.main:app --reload
+ 1220  pip3 install awscli boto3 pyspark
+ 1221  python3 awsglues.py
+ 1222  pip3 install awsglue
+ 1223  pip3 install https://aws-glue-etl-artifacts.s3.amazonaws.com/glue-4.0/python/awsglue-4.0.0-py3-none-any.whl
+ 1224  pip3 install https://aws-glue-etl-artifacts.s3.amazonaws.com/glue-3.0/python/awsglue-3.0.0-py3-none-any.whl
+ 1225  pip3 install https://aws-glue-etl-artifacts.s3.amazonaws.com/glue-2.0/python/awsglue-2.0.0-py3-none-any.whl
+ 1226  pip3 install --upgrade pip3
+ 1227  pip3 install --upgrade
+ 1228  pip install --upgrade pip
+ 1229  pip3 install https://aws-glue-etl-artifacts.s3.amazonaws.com/glue-2.0/python/awsglue-2.0.0-py3-none-any.whl
+ 1230  spark-submit
+ 1231  spark-submit awsglues.py 
+ 1232  spark-submit etl.py
+ 1233  spark-submit awsglues.py 
+ 1234  pip3 install debugpy
+ 1235  spark-submit awsglues.py 
+ 1236  clear
+ 1237  spark-submit awsglues.py 
+ 1238  ls -al
+ 1239  ls -lth
+ 1240  cd django-dev/
+ 1241  ls -al
+ 1242  ls -lth
+ 1243  gsutil
+ 1244  cd ..
+ 1245  cd fastapi_project/
+ 1246  sudo apt install gsutil
+ 1247  cd ..
+ 1248  cpwd
+ 1249  pwd
+ 1250  python3 -m pip install django
+ 1251  pip3 -V
+ 1252  pip3 install virtualenv
+ 1253  virtualenv --version
+ 1254  cd Desktop/projects
+ 1255  cd projects
+ 1256  ls -lth
+ 1257  mkdir smarthospitalsystem
+ 1258  cd smarthospitalsystem/
+ 1259  virtualenv env
+ 1260  ls -al
+ 1261  source env/bin/activate
+ 1262  python3 -m pip install django
+ 1263  ls -al
+ 1264  python3 -m pip freeze > requirements.txt
+ 1265  ls -al
+ 1266  cd env
+ 1267  ls -al
+ 1268  cd ..
+ 1269  touch .env
+ 1270  ls -al
+ 1271  python3 -m pip install django==4.1.7
+ 1272  ls -al
+ 1273  python3 -m pip install -r requirements.txt
+ 1274  ls -al
+ 1275  gedit requirements.txt 
+ 1276  django-admin startproject smarthospitalsystem
+ 1277  ls -al
+ 1278  cd smarthospitalsystem/
+ 1279  ls -al
+ 1280  cd smarthospitalsystem/
+ 1281  ls -al
+ 1282  cd ..
+ 1283  ls -al
+ 1284  cd ..
+ 1285  rm -r smarthospitalsystem/
+ 1286  ls -al
+ 1287  cd smarthospitalsystem/
+ 1288  django-admin startproject smarthospitalsystem
+ 1289  virtualenv env
+ 1290  source env/bin/activate
+ 1291  python3 -m pip install django
+ 1292  python3 -m pip freeze > requirements.txt
+ 1293  ls -al
+ 1294  deactivate env
+ 1295  ls -=al
+ 1296  ls -al
+ 1297  rm -f requirements.txt 
+ 1298  ls- al
+ 1299  cd env
+ 1300  ls -al
+ 1301  cd ..
+ 1302  rm -r .env
+ 1303  rm -r env
+ 1304  ls -al
+ 1305  mkdir projects
+ 1306  cd projects/
+ 1307  virtualenv env
+ 1308  ls -al
+ 1309  source env/bin/activate
+ 1310  python3 -m pip install django
+ 1311  python3 -m pip freeze > requirements.txt
+ 1312  python3 -m pip install django==4.1.7
+ 1313  python3 -m pip install -r requirements.txt
+ 1314  ls -al
+ 1315  touch .env
+ 1316  ls -al
+ 1317  django-admin startproject smarthospitalsystem
+ 1318  ls -al
+ 1319  cd smarthospitalsystem/
+ 1320  ls -al
+ 1321  python3 manage.py runserver
+ 1322  touch .env
+ 1323  ls -al
+ 1324  code .
+ 1325  git clone git://github.com/django/django ~/django-dev
+ 1326  git clone git://github.com/django/django django-dev
+ 1327  php pracinfo.php 
+ 1328  php primenumber.php 
+ 1329  clear
+ 1330  php primenumber.php 
+ 1331  python3 practtest.py
+ 1332  python3 practest.py
+ 1333  python3 primenum
+ 1334  python3 primenum.py 
+ 1335  python3 practest.py
+ 1336  python3 primenum.py 
+ 1337  clear
+ 1338  python3 primenum.py 
+ 1339  cd projects/
+ 1340  ls -al
+ 1341  cd smarthospitalsystem/
+ 1342  pip3 install gunicorn dj-database-url psycopg2-binary
+ 1343  python manage.py runserver
+ 1344  python3 manage.py runserver
+ 1345  python manage.py runserver
+ 1346  python3 manage.py runserver
+ 1347  pip3 install os
+ 1348  python3 manage.py runserver
+ 1349  code .
+ 1350  pip3 install dj_database_url
+ 1351  pip3 install dj-database-url
+ 1352  pip3 show dj-database-url
+ 1353  dj-database-url
+ 1354  ls -al
+ 1355  pip3 install -r requirements.txt
+ 1356  touch requirements.txt
+ 1357  pip3 show dj-database-url
+ 1358  pip3 install -r requirements.txt
+ 1359  pip3 install dj-database-url psycopg2-binary
+ 1360  postgre
+ 1361  postgresql
+ 1362  python3 manage.py migrate
+ 1363  cd ..
+ 1364  cd hospital-system/
+ 1365  php artisan 
+ 1366  php artisan make:observer 
+ 1367  code .
+ 1368  php primenum.py 
+ 1369  python3 primenum.py 
+ 1370  cd project/
+ 1371  python3 primenum.py 
+ 1372  python3 multithreading.py 
+ 1373  pip3 install pandas
+ 1374  python3 multithreading.py 
+ 1375  cleat
+ 1376  clear
+ 1377  python3 multithreading.py 
+ 1378  clear
+ 1379  python3 multithreading.py 
+ 1380  clear
+ 1381  python3 multithreading.py 
+ 1382  git clone https://github.com/GoogleCloudPlatform/python-docs-samples.git
+ 1383  cd python-docs-samples/
+ 1384  ls -al
+ 1385  gedit README.md 
+ 1386  pip install -r requirements.txt
+ 1387  gcloud auth application-default login
+ 1388  sudo apt install google-cloud-cli
+ 1389  sudo snap install google-cloud-cli
+ 1390  cd logging/cloud-client/
+ 1391  ls -al
+ 1392  python3 -m venv env
+ 1393  source env/bin/activate
+ 1394  ls -al
+ 1395  pip install -r requirements.txt
+ 1396  cd ..
+ 1397  cd run
+ 1398  ls -al
+ 1399  cd django/
+ 1400  ls -al
+ 1401  php install requirements.txt 
+ 1402  php3 install requirements.txt 
+ 1403  python3 install requirements.txt 
+ 1404  pip3 install requirements.txt 
+ 1405  pip install -r requirements.txt
+ 1406  ls -al
+ 1407  python manage.py runserver
+ 1408  python3 manage.py runserver
+ 1409  touch .env
+ 1410  ls -al
+ 1411  ./retry.sh 
+ 1412  python3 manage.py runserver
+ 1413  cd ..
+ 1414  cd speech/
+ 1415  cd microphone/
+ 1416  ls -al
+ 1417  python3 transcribe_streaming_mic.py 
+ 1418  python3 transcribe_streaming_mic.py run server
+ 1419  pip install -r requirements.txt
+ 1420  python3 transcribe_streaming_mic.py run server
+ 1421  python3 transcribe_streaming_mic.py runserver
+ 1422  gcloud
+ 1423  sudo snap install google-cloud-cli
+ 1424  ls -al
+ 1425  pwd
+ 1426  ls -al
+ 1427  export GOOGLE_APPLICATION_CREDENTIALS="/home/ganesh/projects/smarthospitalsystem/service-account.json"
+ 1428  source /home/ganesh/projects/env/bin/activate
+ 1429  python3 manage.py runserver
+ 1430  python3 -m pip show dj-database-url
+ 1431  pip3 install dj-database-url
+ 1432  python3 manage.py runserver
+ 1433  pip3 install mysqlclient
+ 1434  python3 manage.py runserver
+ 1435  pip3 install google
+ 1436  python3 manage.py runserver
+ 1437  pip install google-auth
+ 1438  python3 manage.py runserver
+ 1439  pip3 install requests
+ 1440  python3 manage.py runserver
+ 1441  pip install -r requirements.txt
+ 1442  python3 manage.py runserver
+ 1443  cd projects/
+ 1444  cd smarthospitalsystem/
+ 1445  django-admin startproject
+ 1446  django-admin startproject shs
+ 1447  ls -al
+ 1448  cd shs
+ 1449  ls -al
+ 1450  cd shs
+ 1451  ls -al
+ 1452  cd ..
+ 1453  rm -r shs
+ 1454  ls -al
+ 1455  gedit requirements.txt 
+ 1456  gedit coherence.yml
+ 1457  cd ..
+ 1458  cd smarthospitalsystem/
+ 1459  code .
+ 1460  ls -al
+ 1461  python3 manage.py runserver
+ 1462  pip3 install gunicorn
+ 1463  ls-al
+ 1464  ls -al
+ 1465  gunicorn smarthospitalsystem.wsgi:application
+ 1466  python3 manage.py runserver
+ 1467  pip3 install uvicorn
+ 1468  uvicorn smarthospitalsystem.asgi:application --host 0.0.0.0 --port 8000
+ 1469  uvicorn smarthospitalsystem.asgi:application --host 127.0.0.1 --port 8000
+ 1470  python3 manage.py runserver
+ 1471  python3 manage.py createsuperuser
+ 1472  python3 manage.py runserver
+ 1473  python manage.py shell
+ 1474  python3 manage.py shell
+ 1475  pip3 install google-auth
+ 1476  python3 manage.py shell
+ 1477  ls -al
+ 1478  pwd
+ 1479  export GOOGLE_APPLICATION_CREDENTIALS="/home/ganesh/projects/smarthospitalsystem/service-account.json"
+ 1480  python3 manage.py shell
+ 1481  python3 manage.py runserver
+ 1482  pip3 install bigquery
+ 1483  python3 manage.py runserver
+ 1484  pip3 install mysqlclient
+ 1485  python3 manage.py runserver
+ 1486  pip3 install aiplatform
+ 1487  pip3 install --upgrade google-cloud-aiplatform
+ 1488  pip install --upgrade google-genai
+ 1489  python3 manage.py runserver
+ 1490  pip install --upgrade google-cloud-aiplatform
+ 1491  pip install --upgrade google-cloud-aiplatform google-genai
+ 1492  pip install --upgrade google-cloud
+ 1493  pip3 install --upgrade google-genai
+ 1494  python3 manage.py runserver
+ 1495  pip install --upgrade google-cloud-aiplatform
+ 1496  pip3 install --upgrade google-cloud-aiplatform
+ 1497  pip3 install --upgrade google-genai
+ 1498  python3 -m pip show google-cloud-aiplatform
+ 1499  python3 manage.py runserver
+ 1500  python3 manage.py shell
+ 1501  python3 manage.py runserver
+ 1502  python manage.py startapp user
+ 1503  python2 manage.py startapp user
+ 1504  python3 manage.py startapp user
+ 1505  python3 manage.py runserver
+ 1506  pip3 install google.oauth2
+ 1507  touch .env
+ 1508  cd projects/smarthospitalsystem/
+ 1509  ls -al
+ 1510  python3 manage.py runserver
+ 1511  Export GOOGLE_APPLICATION_CREDENTIALS="/home/ganesh/projects/smarthospitalsystem/service-account.json"
+ 1512  export GOOGLE_APPLICATION_CREDENTIALS="/home/ganesh/projects/smarthospitalsystem/service-account.json"
+ 1513  gcloud
+ 1514  code .
+ 1515  cd ..
+ 1516  django
+ 1517  history
+ 1518  django-admin startproject shs
+ 1519  cd shs
+ 1520  ls -al
+ 1521  cd sha
+ 1522  cd shs
+ 1523  ls -al
+ 1524  cd ..
+ 1525  python3 manage.py startapp users
+ 1526  python3 manage.py runserver
+ 1527  export GOOGLE_APPLICATION_CREDENTIALS="/home/ganesh/projects/shs/service-account.json"
+ 1528  code .
+ 1529  python3 manage.py runserver
+ 1530  export GOOGLE_APPLICATION_CREDENTIALS="/home/ganesh/shs/service-account.json"
+ 1531  python3 manage.py runserver
+ 1532  pip3 install django-extension
+ 1533  pip3 install django-extensions
+ 1534  python3 manage.py runserver
+ 1535  pip3 install rest_framework
+ 1536  pip install djangorestframework
+ 1537  pip3 install djangorestframework
+ 1538  python3 manage.py runserver
+ 1539  pwd
+ 1540  pip3 install google.oauth2
+ 1541  cd shs/
+ 1542  python3 manage.py runserver
+ 1543  python3 manage.py runserver --8002
+ 1544  python3 manage.py runserver 8001
+ 1545  cd ../tutorial/
+ 1546  python3 manage.py runerver
+ 1547  python3 manage.py runserver
+ 1548  code .
+ 1549  pip3 install google-auth
+ 1550  pip3 install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+ 1551  export GOOGLE_APPLICATION_CREDENTIALS="/home/ganesh/shs/service-account.json"
+ 1552  pip3 install --upgrade google-genai
+ 1553  php primenumber.php 
+ 1554  php testjobs.php 
+ 1555  php test_jit.php 
+ 1556  code .
+ 1557  pip3 install --upgrade google-cloud-aiplatform
+ 1558  pip show google-cloud-aiplatform
+ 1559  pip install google-cloud-aiplatform==1.54.0
+ 1560  pip show google-cloud-aiplatform
+ 1561  pip install google-cloud-aiplatform==1.109.0
+ 1562  pip3 install google-auth requests python-dotenv
+ 1563  echo "# shs" >> README.md
+ 1564  git init
+ 1565  git add README.md
+ 1566  git commit -m "project start"
+ 1567  git branch -M main
+ 1568  git remote add origin https://github.com/ganesh1977/shs.git
+ 1569  git push -u origin main
+ 1570  git push .
+ 1571  git config
+ 1572  git status
+ 1573  git add .
+ 1574  git status
+ 1575  git commit -m "data set"
+ 1576  git push orgin main
+ 1577  git push origin main
+ 1578  git rm --cached service-account.json
+ 1579  ls -al
+ 1580  git commit -m "Remove service account key from repo"
+ 1581  git push origin main --force
+ 1582  git rm --cached service-account.json
+ 1583  ls -al
+ 1584  pip install git-filter-repo
+ 1585  git filter-repo --path service-account.json --invert-paths
+ 1586  ls -al
+ 1587  git filter-repo --path service-account.json 
+ 1588  git push origin main --force
+ 1589  git filter-repo
+ 1590  pip install git-filter-repo
+ 1591  lear
+ 1592  clear
+ 1593  pip install git-filter-repo
+ 1594  git filter-repo --path service-account.json --invert-paths
+ 1595  git filter-repo --path service-account.json --invert-paths --force
+ 1596  ls -al
+ 1597  git push origin main --force
+ 1598  git status
+ 1599  git add .
+ 1600  git commit -m "data test"
+ 1601  git status
+ 1602  git push origin main --force
+ 1603  ls -al
+ 1604  git push origin main --force
+ 1605  git status
+ 1606  git  config
+ 1607  git status
+ 1608  git add .
+ 1609  git status
+ 1610  git commit -m "project set"
+ 1611  git status
+ 1612  git push origin main --force
+ 1613  git remote -v
+ 1614  git remote add origin https://github.com/ganesh1977/shs.git
+ 1615  git push origin main --force
+ 1616  git log
+ 1617  git reset --soft HEAD~1
+ 1618  git log
+ 1619  git reset --soft HEAD~1
+ 1620  git log
+ 1621  git reset --soft HEAD~1
+ 1622  git log
+ 1623  git reset --soft HEAD~1
+ 1624  git log
+ 1625  git reset --soft HEAD~1
+ 1626  git push origin main --force
+ 1627  git rebase -i 709f42a4122a0d7e47157764812525d689714853
+ 1628  git rebase -i HEAD~3
+ 1629  git push origin main --force
+ 1630  git push origin main
+ 1631  git log
+ 1632  git rebase -i
+ 1633  git rebase main
+ 1634  git log
+ 1635  git push origin main
+ 1636  git pull origin main
+ 1637  git push origin main
+ 1638  git remote add origin https://github.com/ganesh1977/shs.git
+ 1639  git branch -b sha-1
+ 1640  git branch sha-1
+ 1641  git status
+ 1642  git config
+ 1643  git checkout sha-1
+ 1644  git status
+ 1645  git commit -m "testmode"
+ 1646  git status
+ 1647  git log
+ 1648  git push ogirin sha-1
+ 1649  git push ogirin shs-1
+ 1650  git push origin shs-1
+ 1651  git push origin sha-1
+ 1652  git push origin main --force
+ 1653  git pull origin main
+ 1654  git pull origin sha-1
+ 1655  git push origin sha-1
+ 1656  git push origin sha-1 --force
+ 1657  git rm --cached service-account.json
+ 1658  ls -al
+ 1659  echo "service-account.json" >> .gitignore
+ 1660  git commit -m "Remove service-account.json from repo"
+ 1661  git filter-repo --path service-account.json --invert-paths
+ 1662  git log --all -- service-account.json
+ 1663  git push origin sha-1 --force
+ 1664  git push origin sha-1
+ 1665  git log
+ 1666  git checkout sha-2
+ 1667  git checkout -b sha-2
+ 1668  git status
+ 1669  git add .
+ 1670  git status
+ 1671  git commit -m "project setups"
+ 1672  git push origin sha-2
+ 1673  git remote -v
+ 1674  git remote add origin https://github.com/ganesh1977/shs.git
+ 1675  git remote -v
+ 1676  git push -u origin sha-2
+ 1677  ls -al
+ 1678  git branch --show-current
+ 1679  cd ..
+ 1680  cd hospital-system/
+ 1681  composer require barryvdh/laravel-debugbar --dev
+ 1682  composer require barryvdh/laravel-debugbar --dev -W
+ 1683  php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
+ 1684  code .
+ 1685  php artisan server
+ 1686  php artisan runserver
+ 1687  php artisan serve
+ 1688  ls -al
+ 1689  ls *.mp3
+ 1690  ls *.wav
+ 1691  pwd
+ 1692  git status
+ 1693  git add .
+ 1694  git status
+ 1695  git commit -m " credentials setup has changed"
+ 1696  history
+ 1697  git push origin sha-2
+ 1698  pip install google-cloud-speech google-cloud-texttospeech django
+ 1699  cd shs/
+ 1700  python3 manage.py runserver
+ 1701  cd shs/
+ 1702  python3 manage.py runserver
+ 1703  curl -X POST http://127.0.0.1:8000/users/generateaudio/      -H "Content-Type: application/json"      -d '{"text": "Hello from GCP Text to Speech!"}'      --output hello.mp3
+ 1704  ls -al
+ 1705  curl -X POST http://127.0.0.1:8000/users/generateaudio/      -H "Content-Type: application/json"      -d '{"text": "नमस्ते, यह गूगल क्लाउड टेक्स्ट टू स्पीच है", "language_code": "hi-IN", "gender": "FEMALE", "format": "wav"}'      --output hindi.wav
+ 1706  ls -al
+ 1707  pip install django-rest-swagger
+ 1708  pip install -U drf-yasg
+ 1709  pip3 install pydub
+ 1710  pip3 install google-cloud-texttospeech
+ 1711  cd shs
+ 1712  git status
+ 1713  git add .
+ 1714  git status
+ 1715  git commit -m "sppech to text and text to speech code is added"
+ 1716  git push origin sha-2
+ 1717  pythgon3 --version
+ 1718  python3 manage.py startapp voicebot
+ 1719  ls -al
+ 1720  code .
+ 1721  cd shs
+ 1722  ls -al
+ 1723  git status
+ 1724  git add .
+ 1725  git status
+ 1726  git commit -m "voice bot"
+ 1727  git push origin sha-2
+ 1728  ls -al
+ 1729  cd shs/
+ 1730  ls -al
+ 1731  python3 manage.py runserver
+ 1732  code .
+ 1733  pip3 install channels google-cloud-speech google-cloud-texttospeech
+ 1734  python3 -m google.cloud.speech
+ 1735  sudo apt-get install libreoffice libreoffice IRF 1.0.pdf
+ 1736  sudo apt-get install libreoffice IRF 1.0.pdf
+ 1737  sudo apt install pdfarranger
+ 1738  php binarytree.php 
+ 1739  php substrings.php 
+ 1740  clea
+ 1741  clear
+ 1742  php substrings.php 
+ 1743  cd shs
+ 1744  ls -al
+ 1745  python3 manage.py runserver
+ 1746  code .
+ 1747  ffmpeg
+ 1748  cd /download
+ 1749  ls -al
+ 1750  ffmpeg -i hindi.wav -ar 44100 output.wav 
+ 1751  cd ../Download
+ 1752  cd ../Downloads
+ 1753  ffmpeg -i OSR_us_000_0010_8k.wav -ar 44100 output.wav
+ 1754  ls -al
+ 1755  cs shs/
+ 1756  cd shs
+ 1757  ls -al
+ 1758  python3 manage.py runserver
+ 1759  python3 -c
+ 1760  python3 -m module 
+ 1761  python3 -m module pandas
+ 1762  python3 -m module panda
+ 1763  python3 -m timeit 
+ 1764  python3 -m timeit -s
+ 1765  python3 -m timeit -s "setup here" "benchmarked code here"
+ 1766  python3 -m timeit -s "setup here"
+ 1767  python3 -m timeit -s
+ 1768  python3 -m timeit -h
+ 1769  python3 -d manage.py runserver
+ 1770  python3 -c code
+ 1771  python3 -c
+ 1772  python3 manage.py runserver -c
+ 1773  python3 manage.py runserver -h
+ 1774  python3 manage.py
+ 1775  python3 manage.py loaddata
+ 1776  python3 manage.py shell
+ 1777  python3 manage.py dumpdata
+ 1778  python3
+ 1779  python3 manage.py
+ 1780  python3 manage.py generate_swagger
+ 1781  code .
+ 1782  python3 swagger.py 
+ 1783  python3 manage.py generate_swagger
+ 1784  python3 manage.py runserver
+ 1785  python3  -X tracemalloc
+ 1786  python3 manage.py -X tracemalloc
+ 1787  python3 manage.py -X runserver
+ 1788  python3 -X
+ 1789  python3 -h
+ 1790  python3 -X dev
+ 1791  python3 -c 'print("ℙƴ☂ℌøἤ")'
+ 1792  python3 -c 'print("ssss")'
+ 1793  locale
+ 1794  locale | grep -E 'LC_ALL|LC_CTYPE|LANG'
+ 1795  python3 --with-pydebug¶
+ 1796  python3 --with-pydebug
+ 1797  gcloud auth login
+ 1798  python3 manage.py startapp bot
+ 1799  ls -al
+ 1800  cd bot
+ 1801  ls -al
+ 1802  touch url.py
+ 1803  ls -al
+ 1804  cd ..
+ 1805  python3 manage.py runserver
+ 1806  cd ..
+ 1807  pwd
+ 1808  sudo apt install python3-venv python3-pip git -y
+ 1809  python3 -c "import secrets; print(secrets.token_urlsafe(32))"
+ 1810  cd shs
+ 1811  export DJANGO_SECRET_KEY="changeme"
+ 1812  export DJANGO_DEBUG=1
+ 1813  export DJANGO_ALLOWED_HOSTS="*"
+ 1814  export TELEGRAM_BOT_TOKEN="8456234458:AAGgY-YOQK01lZFQjJ70qriqE4qo5nbCSy8"
+ 1815  export TELEGRAM_WEBHOOK_SECRET="6x53H4j_LGRuCo-g12rppH-w0EPWpB1AVUwp8JxZ1w4"
+ 1816  curl -X POST https://api.telegram.org/bot8456234458:AAGgY-YOQK01lZFQjJ70qriqE4qo5nbCSy8/sendMessage      -d chat_id=111111111      -d text="Hello from my bot!"
+ 1817  curl -X POST https://api.telegram.org/bot8456234458:AAGgY-YOQK01lZFQjJ70qriqE4qo5nbCSy8/sendMessage      -d chat_id=1      -d text="Hello from my bot!"
+ 1818  curl -X POST https://api.telegram.org/bot8456234458:AAGgY-YOQK01lZFQjJ70qriqE4qo5nbCSy8/sendMessage      -H "Content-Type: application/json"      -d '{"chat_id":123456789,"text":"Hello world"}'
+ 1819  curl https://api.telegram.org/bot8456234458:AAGgY-YOQK01lZFQjJ70qriqE4qo5nbCSy8/getUpdates
+ 1820  clear
+ 1821  curl https://api.telegram.org/bot8456234458:AAGgY-YOQK01lZFQjJ70qriqE4qo5nbCSy8/getUpdates
+ 1822  cd ..
+ 1823  git clone --recursive https://github.com/tdlib/telegram-bot-api.git
+ 1824  cd telegram-bot-api/
+ 1825  mkdir build
+ 1826  cd build/
+ 1827  cmake -DCMAKE_BUILD_TYPE=Release ..
+ 1828  sudo snap install cmake
+ 1829  cmake
+ 1830  sudo apt install cmake
+ 1831  cmake
+ 1832  cmake -DCMAKE_BUILD_TYPE=Release ..
+ 1833  cmake --build . --target install
+ 1834  telegram-bot-api
+ 1835  cd ..
+ 1836  telegram-bot-api
+ 1837  sudo apt-get purge cmake
+ 1838  cmake
+ 1839  cd ..
+ 1840  rm -r telegram-bot-api/
+ 1841  sudo rm -r telegram-bot-api/
+ 1842  cd testpro/python-crud/
+ 1843  pip install llama-stack
+ 1844  pip install llama-stack -U
+ 1845  llama model list
+ 1846  llama model list --show-all
+ 1847  ollama
+ 1848  sudo snap install ollama
+ 1849  ollama
+ 1850  ollama run
+ 1851  ollama push sganesh/bcp
+ 1852  ollama run llama3.2
+ 1853  python3 full_prac.py 
+ 1854  clear
+ 1855  python3 full_prac.py 
+ 1856  clear
+ 1857  python3 full_prac.py 
+ 1858  clear
+ 1859  python3 full_prac.py 
+ 1860  clear
+ 1861  python3 full_prac.py 
+ 1862  clear
+ 1863  python3 full_prac.py 
+ 1864  cd hospital-system/
+ 1865  git remote
+ 1866  cd hospital-system/
+ 1867  php artisan help migrate
+ 1868  composer require laravel/tinker
+ 1869  php artisan thicker
+ 1870  php artisan tinker
+ 1871  php artisan mail:send 1 --isolated
+ 1872  php artisan mail:send 1 --isolated = 12
+ 1873  pip install pyhive
+ 1874  pip install sasl thrift thrift-sasl
+ 1875  pip3 install sasl thrift thrift-sasl
+ 1876  sudo apt-get update
+ 1877  sudo apt-get install -y libsasl2-dev python3-dev gcc
+ 1878  pip install impyla
+ 1879  jps | grep HiveServer2
+ 1880  nc
+ 1881  nc -vz localhost 10000
+ 1882  nc -vz localhost 10001
+ 1883  hiveserver2
+ 1884  [200~netstat -tulnp | grep 10000~
+ 1885  netstat -tulnp | grep 10000~
+ 1886  sudo apt install hadoop -y
+ 1887  schematool
+ 1888  wget https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz
+ 1889  wget https://dlcdn.apache.org/hive/hive-4.0.1/apache-hive-4.0.1-bin.tar.gz 
+ 1890  tar -xvzf apache-hive-3.1.3-bin.tar.gz
+ 1891  tar -xvzf apache-hive-4.0.1-bin.tar.gz
+ 1892  sudo mv apache-hive-3.1.3-bin /opt/hive
+ 1893  sudo mv apache-hive-4.0.1-bin /opt/hive
+ 1894  export HIVE_HOME=/opt/hive
+ 1895  export PATH=$PATH:$HIVE_HOME/bin
+ 1896  export HADOOP_HOME=/usr/local/hadoop  
+ 1897  source ~/.bashrc
+ 1898  schematool -dbType derby -initSchema
+ 1899  schematool
+ 1900  source ~/.bashrc
+ 1901  hiveserver2
+ 1902  export HIVE_HOME=/opt/hive
+ 1903  export PATH=$PATH:$HIVE_HOME/bin
+ 1904  export HADOOP_HOME=/usr/local/hadoop   # adjust if Hadoop in different path
+ 1905  export HADOOP_HOME=/usr/local/hadoop
+ 1906  hiveserver2
+ 1907  export PATH=$HIVE_HOME/bin
+ 1908  hiveserver2
+ 1909  export PATH=$PATH:$HIVE_HOME/bin
+ 1910  netstat -tulnp | grep 10000
+ 1911  which hive
+ 1912  cd /usr/bin
+ 1913  ls -al
+ 1914  nano ~/.bashrc
+ 1915  ls -al
+ 1916  ls
+ 1917  /home/ganesh
+ 1918  ls 
+ 1919  ls -al
+ 1920  export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ 1921  ls -al
+ 1922  source ~/.bashrc
+ 1923  ls -al
+ 1924  \hiveserver2
+ 1925  sudo apt install hadoop -y
+ 1926  sudo mv apache-hive-4.0.1-bin /opt/hadoop
+ 1927  sudo mv apache-hive-4.0.1-bin /opt/hive
+ 1928  cd /opt/
+ 1929  ls -al
+ 1930  cd hive
+ 1931  ls -al
+ 1932  hadoop
+ 1933  hive
+ 1934  nano ~/.bashrc
+ 1935  hive
+ 1936  source ~/.bashrc
+ 1937  hadoop version
+ 1938  nano ~/.bashrc
+ 1939  hiveserver2
+ 1940  nano ~/.bashrc
+ 1941  source ~/.bashrc
+ 1942  hadoop version
+ 1943  echo $HADOOP_HOME
+ 1944  echo $HIVE_HOME
+ 1945  which hadoop
+ 1946  which hive
+ 1947  hiveserver2
+ 1948  hive version
+ 1949  nano ~/.bashrc
+ 1950  source ~/.bashrc
+ 1951  hive
+ 1952  hive --version
+ 1953  nano ~/.bashrc
+ 1954  ls -l /opt/hadoop
+ 1955  ls -l /opt/hive
+ 1956  cd bin
+ 1957  ls -al
+ 1958  beeline
+ 1959  hive
+ 1960  hive --version
+ 1961  beeline
+ 1962  nano ~/.bashrc
+ 1963  hive --version
+ 1964  beeline
+ 1965  hive
+ 1966  source ~/.bashrc
+ 1967  hive --version
+ 1968  cd ..
+ 1969  ls -al
+ 1970  cd omantra/
+ 1971  ls -al
+ 1972  cd ..
+ 1973  rm r omantra/
+ 1974  rm -r omantra/
+ 1975  ls -al
+ 1976  python3 datatest.py 
+ 1977  clear
+ 1978  python3 datatest.py 
+ 1979  clear
+ 1980  python3 datatest.py 
+ 1981  clear
+ 1982  python3 datatest.py 
+ 1983  clear
+ 1984  python3 datatest.py 
+ 1985  clear
+ 1986  python3 datatest.py 
+ 1987  clear
+ 1988  python3 datatest.py 
+ 1989  clear
+ 1990  python3 datatest.py 
+ 1991  clear
+ 1992  python3 datatest.py 
+ 1993  clear
+ 1994  python3 datatest.py 
+ 1995  pip install impyla
+ 1996  python3 datatest.py 
+ 1997  clear
+ 1998  python3 datatest.py 
+ 1999  code .
+ 2000  ollama pull llama2
+ 2001  git config
+ 2002  history
+ 2003  cat history > history.txt
+ 2004  history > history.txt
