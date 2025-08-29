@@ -73,5 +73,31 @@ def listen_and_ask(request):
     except Exception as e:
         # Catch *any* other error so Django never returns None
         return JsonResponse({"error": str(e)}, status=500)
+    
+def hospital_chat(request):
+    query = request.GET.get("q", "")
+
+    if not query:
+        return JsonResponse({"error": "No query provided"}, status=400)
+
+    # Example system prompt to guide the model
+    system_prompt = """
+    You are an AI assistant for a hospital call center.
+    - Greet politely
+    - Help with appointments, doctor info, visiting hours
+    - Do NOT give medical diagnosis
+    - Always suggest speaking with a doctor for medical concerns
+    """
+
+    response = ollama.chat(
+        model="llama3.2",
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": query}
+        ]
+    )
+
+    answer = response['message'].content
+    return JsonResponse({"response": answer})
 
 
