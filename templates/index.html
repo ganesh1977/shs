@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <body>
+    <h3>Voice demo (GCP STT/TTS)</h3>
+    <label>Language:
+      <select id="lang">
+        <option value="en-US">en-US</option>
+        <option value="hi-IN">hi-IN</option>
+        <option value="ta-IN">ta-IN</option>
+        <option value="te-IN">te-IN</option>
+        <option value="bn-IN">bn-IN</option>
+      </select>
+    </label>
+    <button id="start">Start</button>
+    <button id="stop" disabled>Stop</button>
+    <p><strong>Transcript:</strong> <span id="transcript"></span></p>
+    <audio id="reply" controls></audio>
+
+    <script>
+      const apiBase = "/api/voice";
+      const langSelect = document.getElementById("lang");
+      const btnStart = document.getElementById("start");
+      const btnStop  = document.getElementById("stop");
+      const transcriptSpan = document.getElementById("transcript");
+      const replyAudio = document.getElementById("reply");
+
+      // Load languages
+      fetch(`${apiBase}/languages`).then(r=>r.json()).then(({languages})=>{
+        languages.forEach(({code,name})=>{
+          const o = document.createElement("option");
+          o.value = code; o.textContent = `${name} (${code})`;
+          langSelect.appendChild(o);
+        });
+        langSelect.value = "en-US";
+      });
+
+      let mediaRecorder, chunks = [];
+
+      btnStart.onclick = async () => {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        // Prefer Opus in webm; Speech API supports WEBM_OPUS
+        mediaRecorder = new MediaRecorder(stream, { mimeType: "audio/webm;codecs=opus" });
+        chunks = [];
+        mediaRecorder.ondataavailable = e => { if (e.data.size > 0) chunks.push(e.data); };
+        mediaRecorder.onstop = async () => {
+          const blob = new Blob(chunks, { type: "audio/webm" });
+          const form = new FormData();
+          form.append("file", blob, "clip.webm");
+          form.append("lang", langSelect.value);
+
+          const resp = await fetch(`${apiBase}/recognize-reply`, { method: "POST", body: form });
+          const data = await resp.json();
+          transcriptSpan.textContent = data.transcript || "";
+          if (data.reply_mp3_base64) {
+            const mp3Url = "data:audio/mpeg;base64," + data.reply_mp3_base64;
+            replyAudio.src = mp3Url;
+            replyAudio.play();
+          }
+        };
+        mediaRecorder.start();
+        btnStart.disabled = true; btnStop.disabled = false;
+      };
+
+      btnStop.onclick = () => {
+        mediaRecorder && mediaRecorder.stop();
+        btnStart.disabled = false; btnStop.disabled = true;
+      };
+    </script>
+  </body>
+</html>

@@ -10,6 +10,5 @@ urlpatterns = [
     path("chat", views.genclient, name="chatinfo"),
     path("speechtotext", views.speech_to_text, name="speech_to_text"),    
     path("generatetext", views.speechtext, name="speech_to_text"),    
-    path("generateaudio", views.generate_audio, name="generate_audio"),       
-    
+    path("generateaudio", views.generate_audio, name="generate_audio")    
 ]
