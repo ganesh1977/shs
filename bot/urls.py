@@ -5,4 +5,5 @@ from . import views
 urlpatterns = [
     path("telegram/<str:secret>/getMe", telegram_webhook),
     path("chat/", views.chat_with_model, name="chat"),
+    path("listen/", views.listen_and_ask, name="voice")    
 ]
