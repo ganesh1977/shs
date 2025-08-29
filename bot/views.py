@@ -4,6 +4,7 @@ from django.http import JsonResponse, HttpResponseForbidden
 from django.views.decorators.csrf import csrf_exempt
 import ollama  # Alla
 import speech_recognition as sr
+import pyttsx3
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_API = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}"
@@ -99,5 +100,44 @@ def hospital_chat(request):
 
     answer = response['message'].content
     return JsonResponse({"response": answer})
+
+def voice_chat(request):
+    recognizer = sr.Recognizer()
+    mic = sr.Microphone()
+
+    # Initialize text-to-speech
+    tts = pyttsx3.init()
+
+    while True:
+        try:
+            with mic as source:
+                print("🎤 Speak now (say 'exit' to quit)...")
+                recognizer.adjust_for_ambient_noise(source)
+                audio = recognizer.listen(source)
+
+            # Step 1: Convert voice → text
+            query = recognizer.recognize_google(audio)
+            print(f"🗣 You: {query}")
+
+            if query.lower() in ["exit", "quit", "stop"]:
+                print("👋 Exiting voice assistant.")
+                break
+
+            # Step 2: Send to Ollama
+            response = ollama.chat(
+                model="llama3.2",
+                messages=[{"role": "user", "content": query}]
+            )
+            answer = response['message'].content
+            print(f"🤖 Ollama: {answer}")
+
+            # Step 3: Speak the response
+            tts.say(answer)
+            tts.runAndWait()
+
+        except sr.UnknownValueError:
+            print("❌ Could not understand audio")
+        except Exception as e:
+            print(f"⚠️ Error: {e}")
 
 

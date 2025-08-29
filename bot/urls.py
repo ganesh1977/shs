@@ -7,4 +7,6 @@ urlpatterns = [
     path("chat/", views.chat_with_model, name="chat"),
     path("listen/", views.listen_and_ask, name="voice"),
     path("hchat/", views.hospital_chat, name="hchat"),    
+    path("vchat/", views.voice_chat, name="vchat"), 
+    
 ]
